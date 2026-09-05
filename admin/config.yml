@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: APNA_USERNAME/results-website
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "results"
+    label: "Results"
+    folder: "results"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "date"}
+      - {label: "Result Link", name: "link", widget: "string"}
